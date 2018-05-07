@@ -14,7 +14,7 @@ instructor: ["Juliane Schneider", "Chris Erdmann", "John Chodacki"] # boxed, com
 helper: ["Tim Dennis"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["timdennis@ucla.edu", "chris@carpentry.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  http://pad.software-carpentry.org/2018-05-ucla-lib-carp           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite: 4205958     # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite:    # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -37,13 +37,24 @@ eventbrite: 4205958     # optional: alphanumeric key for Eventbrite registration
   displayed if the 'eventbrite' field in the header is not set.
 {% endcomment %}
 {% if page.eventbrite %}
-<iframe
-  src="https://calendar.library.ucla.edu/event/{{page.eventbrite}}"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
+<!-- Place the following link anywhere in your page. Make sure the id "s_lc_event_4205958" matches with the above code: jQuery("#s_lc_event_4205958")  //-->
+<a id="s_lc_event_4205958" href="https://calendar.library.ucla.edu/event/4205958">CLICK AND REGISTER</a>
+<!-- Below is optional element styling  //-->
+<style>
+#s_lc_event_4205958 {
+  background: #3284BF;
+  border: 1px solid #3284BF;
+  border-radius: 4px;
+  color: #ffe800;
+  font: 14px Arial, Helvetica, Verdana;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+#s_lc_event_4205958:hover {
+  opacity: 0.9;
+}
+</style>
+
 {% endif %}
 
 <h2 id="general">General Information</h2>

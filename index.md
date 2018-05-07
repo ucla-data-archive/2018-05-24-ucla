@@ -14,7 +14,7 @@ instructor: ["Juliane Schneider", "Chris Erdmann", "John Chodacki"] # boxed, com
 helper: ["Tim Dennis"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["timdennis@ucla.edu", "chris@carpentry.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  http://pad.software-carpentry.org/2018-05-ucla-lib-carp           # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite: 4205958     # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
@@ -38,7 +38,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 {% endcomment %}
 {% if page.eventbrite %}
 <iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
+  src="https://calendar.library.ucla.edu/event/{{page.eventbrite}}"
   frameborder="0"
   width="100%"
   height="248px"
@@ -193,9 +193,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif page.carpentry == "lc" %}
-<p>Ask your instructor about pre- and post-workshop Survey details.</p>
-<a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id={{site.github.project_title}}"> Pre-workshop Survey</a></p>
-<a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id={{site.github.project_title}}"> Post-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id={{site.github.project_title}}"> Pre-workshop Survey</a></p>
+<p><a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id={{site.github.project_title}}"> Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>

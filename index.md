@@ -38,7 +38,7 @@ eventbrite: 12345667    # optional: alphanumeric key for Eventbrite registration
 {% endcomment %}
 {% if page.eventbrite %}
 <!-- Place the following link anywhere in your page. Make sure the id "s_lc_event_4205958" matches with the above code: jQuery("#s_lc_event_4205958")  //-->
-<a id="s_lc_event_4205958" href="https://calendar.library.ucla.edu/event/4205958">CLICK AND REGISTER</a>
+<a id="s_lc_event_4205958" href="https://calendar.library.ucla.edu/event/4205958">REGISTER NOW</a>
 <!-- Below is optional element styling  //-->
 <style>
 #s_lc_event_4205958 {

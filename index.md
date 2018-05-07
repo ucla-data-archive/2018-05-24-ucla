@@ -194,6 +194,8 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 <p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif page.carpentry == "lc" %}
 <p>Ask your instructor about pre- and post-workshop Survey details.</p>
+<a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id={{site.github.project_title}}"> Pre-workshop Survey</a></p>
+<a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id={{site.github.project_title}}"> Post-workshop Survey</a></p>
 {% endif %}
 
 <hr/>

@@ -204,8 +204,7 @@ eventbrite: 12345667    # optional: alphanumeric key for Eventbrite registration
 <p><a href="{{ site.dc_pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
 <p><a href="{{ site.dc_post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
 {% elsif page.carpentry == "lc" %}
-<p><a href="https://www.surveymonkey.com/r/lcpreworkshopsurvey?workshop_id={{site.github.project_title}}"> Pre-workshop Survey</a></p>
-<p><a href="https://www.surveymonkey.com/r/lcpostworkshopsurvey?workshop_id={{site.github.project_title}}"> Post-workshop Survey</a></p>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLScVNTnJf0Ygc9DdUo03lOKwjwpq34vBQ7zdgnOFbenQr6ZfKg/viewform"> Pre-workshop Survey</a></p>
 {% endif %}
 
 <hr/>
